@@ -1,0 +1,15 @@
+{
+  "name": "V14-handler",
+  "version": "1.0.0",
+  "description": "A command & eventhandler for Discord.js V14",
+  "main": "index.js",
+  "repository": "https://github.com/Fyxren/Discord.js-V14-Handler",
+  "author": "Fyxren",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "discord-api-types": "^0.37.10",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.2"
+  }
+}
