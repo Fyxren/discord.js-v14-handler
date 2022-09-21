@@ -1,6 +1,6 @@
 const { Collection, PermissionBitField } = require('discord.js');
 const ms = require('ms');
-const client = require('../..');
+const client = require('..');
 const cooldowns = new Collection();
 
 client.on('interactionCreate', async interaction => {

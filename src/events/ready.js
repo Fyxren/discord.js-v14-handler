@@ -1,5 +1,5 @@
 const { ActivityType } = require('discord.js');
-const client = require('../..');
+const client = require('..');
 
 client.on('ready', () => {
     const activityList = [
