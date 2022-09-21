@@ -22,7 +22,7 @@ module.exports = (client) => {
             });
 
             if (cmd.name) {
-                client.commands.set(cmd.name, cmd)
+                client.commands.set(cmd.name, cmd);
             } else {
                 console.log(`Client - Failed to load ${file.split('.js')[0]}`);
             }
