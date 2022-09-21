@@ -4,7 +4,7 @@ module.exports = {
     name: 'ping',
     description: "Check the ping.",
     type: ApplicationCommandType.ChatInput,
-    // cooldown: 3000,
+    cooldown: 10000,
     run: async (client, interaction) => {
         let embed = {
             description: `🏓 Latency: \`${Math.round(client.ws.ping)} ms\``,
