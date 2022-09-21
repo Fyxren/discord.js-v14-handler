@@ -12,10 +12,12 @@ module.exports.loading = {
 
 module.exports.cooldown = (duration) => {
     return {
-        embeds: {
-            description: e.pending + `You are on a \`${duration}\` cooldown.`,
-            color: c.pending
-        }
+        embeds: [
+            {
+                description: e.pending + `You are on a \`${duration}\` cooldown.`,
+                color: c.pending
+            }
+        ]
     }
 }
 

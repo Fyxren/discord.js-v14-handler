@@ -14,14 +14,13 @@ client.on('interactionCreate', async interaction => {
     if (!command) return client.commands.delete(interaction.commandName);
 
     try {
+        console.log(cooldowns);
         if (command.cooldown) {
-            let newTime = cooldowns.get(`${command.name}-${interaction.user.id}`) - Date.now();
-            let duration = ms(newTime, { long: true });
-            console.log({
-                nt: newTime,
-                dur: duration
-            })
-            if (cooldowns.has(`${command.name}-${interaction.user.id}`)) return interaction.reply(client.embeds.cooldown('test'))
+            if (cooldowns.has(`${command.name}-${interaction.user.id}`)) {
+                let duration = ms(cooldowns.get(`${command.name}-${interaction.user.id}`) - Date.now(), { long: true });
+                return interaction.reply(client.embeds.cooldown(duration));
+            }
+
             if (command.userPerms || command.botPerms) {
                 if (!interaction.memberPermissions.has(PermissionBitField.resolve(command.userPerms || []))) return interaction.reply(client.embeds.fail(`You don't have \`${command.userPerms}\` permissions.`))
                 if (!interaction.guild.members.cache.get(client.user.id).permissions.has(PermissionBitField.resolve(command.botPerms || []))) return interaction.reply(client.embeds.fail(`I don't have \`${command.botPerms}\` permissions.`))
@@ -32,6 +31,7 @@ client.on('interactionCreate', async interaction => {
             setTimeout(() => {
                 cooldowns.delete(`${command.name}-${interaction.user.id}`);
             }, command.cooldown)
+
         } else {
             if (command.userPerms || command.botPerms) {
                 if (!interaction.memberPermissions.has(PermissionBitField.resolve(command.userPerms || []))) return interaction.reply(client.embeds.fail(`You don't have \`${command.userPerms}\` permissions.`))
