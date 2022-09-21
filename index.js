@@ -5,6 +5,9 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
 client.buttons = new Collection();
+client.embeds = require('./src/data/config/embeds');
+client.e = require('./src/data/config/emotes');
+client.c = require('./src/data/config/colors ');
 
 module.exports = client;
 

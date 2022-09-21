@@ -10,6 +10,7 @@
     "@discordjs/rest": "^1.1.0",
     "discord-api-types": "^0.37.10",
     "discord.js": "^14.3.0",
-    "dotenv": "^16.0.2"
+    "dotenv": "^16.0.2",
+    "ms": "^2.1.3"
   }
 }
