@@ -11,7 +11,7 @@ module.exports = (client) => {
         const cmdFiles = fs.readdirSync(`./src/commands/${dir}`).filter(file => file.endsWith('.js'));
 
         for (const file of cmdFiles) {
-            const cmd = require(`./src/commands/${dir}/${file}`);
+            const cmd = require(`../commands/${dir}/${file}`);
             commands.push({
                 name: cmd.name,
                 description: cmd.description,
@@ -21,7 +21,11 @@ module.exports = (client) => {
                 default_member_permissions: cmd.default_member_permissions ? PermissionsBitField.resolve(cmd.default_member_permissions).toString() : null
             });
 
-            if (!cmd.name) console.log(`Client - Failed to load ${file.split('.js')[0]}`);
+            if (cmd.name) {
+                client.commands.set(cmd.name, cmd)
+            } else {
+                console.log(`Client - Failed to load ${file.split('.js')[0]}`);
+            }
 
         }
     });
