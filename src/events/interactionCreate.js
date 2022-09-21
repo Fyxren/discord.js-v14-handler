@@ -14,7 +14,6 @@ client.on('interactionCreate', async interaction => {
     if (!command) return client.commands.delete(interaction.commandName);
 
     try {
-        console.log(cooldowns);
         if (command.cooldown) {
             if (cooldowns.has(`${command.name}-${interaction.user.id}`)) {
                 let duration = ms(cooldowns.get(`${command.name}-${interaction.user.id}`) - Date.now(), { long: true });
