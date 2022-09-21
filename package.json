@@ -6,6 +6,9 @@
   "repository": "https://github.com/Fyxren/Discord.js-V14-Handler",
   "author": "Fyxren",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
     "discord-api-types": "^0.37.10",
