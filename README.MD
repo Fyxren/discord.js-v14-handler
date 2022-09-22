@@ -49,9 +49,7 @@ I'm planning on adding more branches for e.g MySQL & multiple languages.
 ## Contact
 <h3>If you need any help, you can contact me through <b><a href="https://socials.fyxren.com/discord">Discord</a></b>.</h3>
 
----
-
-<h3>⭐ Feel free to star the repo if you like it and check out <b><a href="https://github.com/Nathaniel-VFX/Discord.js-v14-Command-Handlers">the handler</a></b> from <b><a href="https://github.com/Nathaniel-VFX">Nathaniel</a></b> on which this one is built.</h3>
+<h4>⭐ Feel free to star the repo if you like it and check out <b><a href="https://github.com/Nathaniel-VFX/Discord.js-v14-Command-Handlers">the handler</a></b> from <b><a href="https://github.com/Nathaniel-VFX">Nathaniel</a></b> on which this one is built.</h4>
 
 <a href="https://socials.fyxren.com/discord">
     <img src="https://lanyard.cnrad.dev/api/462914535351779328">
