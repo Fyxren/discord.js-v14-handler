@@ -10,7 +10,8 @@
     </a>
     <a href="https://github.com/Fyxren/Discord.js-V14-handler/generate">
         <img src="https://img.shields.io/badge/Github-Use%20Template-orange?style=for-the-badge" alt="github generate template">
-    </p>
+    </a>
+</p>
 
 <br />
 
