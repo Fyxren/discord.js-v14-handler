@@ -21,13 +21,38 @@ I did change some stuff like add config files for colors, emojis and default emb
 
 I'm planning on adding more branches for e.g MySQL & multiple languages.
 
+## Features
+- Commands handler
+- Events handler
+- Permissions handler (_botPerms: []_ & _userPerms: []_)
+- Cooldowns (_Using [Discord.js' Collection](https://discord.js.org/#/docs/collection/main/class/Collection)_)
+- Config files
+    - Colors (_main, done, fail, error, pending_) | E.g. `client.c.main`
+    - Emotes (_done, fail, error, pending_) | E.g. `client.e.done`
+    - Prebuilt embeds
+        ```js
+        /*
+            With args: fail(desc) - done(desc) - cooldown(duration)
+            You likely never need to use 'cooldown()', but you can change the text
+        */
+        interaction.reply(client.embeds.done('Target assasinated'));
+
+        // Without args: loading(), error()
+        interaction.reply(client.embeds.error());
+        ```
+
 ## Setting up
 - You can use this template by clicking the "Use this template" button. Run `yarn install`, `npm install` or whatever package manager you use. 
 - Change the `.env.example` to `.env` and fill in the bot [token] and bot ID. 
 > Guild ID is only needed if you're planning on using the bot in 1 server or for testing purposes. Planning on using it in multiple guilds? Just leave it empty and it should work.
 
-If you need any help, feel free to contact me through [Discord](https://socials.fyxren.com/discord).
+## Contact
+<h3>If you need any help, you can contact me through <b><a href="https://socials.fyxren.com/discord">Discord</a></b>.</h3>
 
 ---
 
-_Yes, this readme is quite boring, but who cares.. Maybe I'll do something about it within a decade._
+<h3>⭐ Feel free to star the repo if you like it and check out <b><a href="https://github.com/Nathaniel-VFX/Discord.js-v14-Command-Handlers">the handler</a></b> from <b><a href="https://github.com/Nathaniel-VFX">Nathaniel</a></b> on which this one is built.</h3>
+
+<a href="https://socials.fyxren.com/discord">
+    <img src="https://lanyard.cnrad.dev/api/462914535351779328">
+</a>
