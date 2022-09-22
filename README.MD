@@ -21,7 +21,11 @@ I did change some stuff like add config files for colors, emojis and default emb
 
 I'm planning on adding more branches for e.g MySQL & multiple languages.
 
-You can use this template by clicking the "Use this template" button.
+## Setting up
+- You can use this template by clicking the "Use this template" button. Run `yarn install`, `npm install` or whatever package manager you use. 
+- Change the `.env.example` to `.env` and fill in the bot [token] and bot ID. 
+> Guild ID is only needed if you're planning on using the bot in 1 server or for testing purposes. Planning on using it in multiple guilds? Just leave it empty and it should work.
+
 If you need any help, feel free to contact me through [Discord](https://socials.fyxren.com/discord).
 
 ---
