@@ -24,7 +24,7 @@ I'm planning on adding more branches for e.g MySQL & multiple languages.
 ## Features
 - Commands handler
 - Events handler
-- Permissions handler (_botPerms: []_ & _userPerms: []_)
+- Permissions handler (_botPerms: [ ]_ & _userPerms: [ ]_)
 - Cooldowns (_Using [Discord.js' Collection](https://discord.js.org/#/docs/collection/main/class/Collection)_)
 - Config files
     - Colors (_main, done, fail, error, pending_) | E.g. `client.c.main`
