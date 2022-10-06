@@ -19,7 +19,12 @@ The slash/application command handler which I use. It's a modified version from 
 
 I did change some stuff like add config files for colors, emojis and default embeds and overal changed it a bit to my needs & way of doing things. I decided to put it on GitHub to make it easy for me to clone the handler for my projects (_which I won't ever finish_). Feel free to use it
 
-I'm planning on adding more branches for e.g MySQL & multiple languages.
+## Branches
+The branches are different variants of the command handler. This is a list of the current branches.
+- [Main](https://github.com/Fyxren/Discord.js-V14-handler/tree/main) | _The basic handler_
+- [MySQL](https://github.com/Fyxren/Discord.js-V14-handler/tree/mysql) | _Support for MySQL_
+
+_More branches somewhere in the future_
 
 ## Features
 - Commands handler
