@@ -43,7 +43,7 @@ _More branches somewhere in the future_
         interaction.reply(client.embeds.done('Target assasinated'));
 
         // Without args: loading(), error()
-        interaction.reply(client.embeds.error());
+        interaction.reply(client.embeds.error);
         ```
 
 ## Setting up
